@@ -1,0 +1,20 @@
+    [
+            {
+                "id": 1,
+                "name": "Garden Care",
+                "description": "We are an online plant shop offering a wide range of cheap and trendy plants.",
+                "image": "/src/assets/garden.svg"
+            },
+            {
+                "id": 2,
+                "name": "Plant Renovation",
+                "description": "We are an online plant shop offering a wide range of cheap and trendy plants.",
+                "image": "/src/assets/plant.svg"
+            },
+            {
+                "id": 3,
+                "name": "Watering Graden",
+                "description": "We are an online plant shop offering a wide range of cheap and trendy plants.",
+                "image": "/src/assets/watering.svg"
+            }
+    ]

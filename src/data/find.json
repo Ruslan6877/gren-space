@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "img": "/src/assets/find/summer.svg",
+        "name": "summer cactus& succulents",
+        "description": "We are an online plant shop offering a wide range of cheap and trendy plants"
+    },
+    {
+        "id": 2,
+        "img": "/src/assets/find/trend.svg",
+        "name": "styling trends & much more",
+        "description": "We are an online plant shop offering a wide range of cheap and trendy plants"
+    }
+]
