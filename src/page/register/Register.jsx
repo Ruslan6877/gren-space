@@ -53,35 +53,32 @@ console.log('rabotaret');
           <p className='cursor-pointer text-white '><span className='text-green' >Login</span> |<span  onClick={handleAcount}> Register</span></p>
         <div className='flex justify-center flex-wrap '>
     
-            <input className='border rounded-md border-lime-300 my-1 py-1 px-3 mx-1' type="email" placeholder='Email..' onChange={(e) => setEmail(e.target.value)}/>
-            <input className='border rounded-md border-lime-300 my-1 py-1 px-3 mx-1' type="password" placeholder='Password..' onChange={(e) => setPassword(e.target.value)}/>
+            <input className='border rounded-md border-lime-300 my-1 py-1 px-3 mx-1 ml:w-[170px]' type="email" placeholder='Email..' onChange={(e) => setEmail(e.target.value)}/>
+            <input className='border rounded-md border-lime-300 my-1 py-1 px-3 mx-1 ml:w-[170px]' type="password" placeholder='Password..' onChange={(e) => setPassword(e.target.value)}/>
         </div>
-
-      
-
        <p className='text-white'>Forgot Password?</p>
-       <Button className={'xl:ml-[420px] lg:ml-[180px] my-2 px-[129px]'} title={'Login'} onClick={handleClick}/>
+       <Button className={'xl:ml-[450px]  my-2 xl:px-[129px] ml:ml-[-25px] ml:w-[140px] lg:ml-[225px] lg:w-[200px]'} title={'Login'} onClick={handleClick}/>
         <p className='text-white'>Or login with</p>
-        <Button className={'xl:ml-[495px] lg:ml-[245px] italic px-5  text-slate-950 bg-blue-400 border-[0.5px] border-[rgb(65,117,223)]  my-2'} onClick={handleGoogle} title={'Login with Google'}/>
-        <Button className={'xl:ml-[485px] lg:ml-[237px] italic px-5 bg-blue-600 text-slate-950 border-[0.5px] border-[rgb(59,89,153)] my-2'} title={'Login with Facebook'}/>
+        <Button className={'xl:ml-[485px]  italic px-5  text-slate-950 bg-blue-400 border-[0.5px] border-[rgb(65,117,223)]  my-2 ml:w-[160px] ml:ml-[-35px] lg:ml-[225px] lg:w-[200px]'} onClick={handleGoogle} title={'Login with Google'}/>
+        <Button className={'xl:ml-[485px]  italic px-5 bg-blue-600 text-slate-950 border-[0.5px] border-[rgb(59,89,153)] my-2 ml:w-[160px] ml:ml-[-35px] lg:ml-[225px] lg:w-[200px]'} title={'Login with Facebook'}/>
         </div>
        ) : (
         <div>
           <p className='cursor-pointer text-white '><span  onClick={handleAcount}>Login</span> | <span className='text-green'> Register</span></p>
         <div className='flex justify-center flex-wrap '>
     
-            <input className='border rounded-md border-lime-300 my-1 py-1 px-3 mx-1' type="email" placeholder='Email..' onChange={(e) => setEmail(e.target.value)}/>
-            <input className='border rounded-md border-lime-300 my-1 py-1 px-3 mx-1' type="password" placeholder='Password..' onChange={(e) => setPassword(e.target.value)}/>
+            <input className='border rounded-md border-lime-300 my-1 py-1 px-3 mx-1 ml:ml-[10px] ml:w-[140px]' type="email" placeholder='Email..' onChange={(e) => setEmail(e.target.value)}/>
+            <input className='border rounded-md border-lime-300 my-1 py-1 px-3 mx-1 ml:ml-[10px] ml:w-[140px]' type="password" placeholder='Password..' onChange={(e) => setPassword(e.target.value)}/>
         </div>
-         <input  className='border rounded-md border-lime-300 my-1 py-1 px-3 mx-1' type="text" placeholder='userName...' />
+         <input  className='border rounded-md border-lime-300 my-1 py-1 px-3 mx-1 ml:ml-[-23px] ml:w-[140px] lg:ml-[10px]' type="text" placeholder='userName...' />
 
       
 
        <p className='text-white'>Forgot Password?</p>
-       <Button className={'xl:ml-[420px]  lg:ml-[180px] my-2 px-[129px]'} title={'Register'} onClick={handleClick}/>
+       <Button className={'xl:ml-[450px]   my-2 xl:px-[129px]  ml:ml-[-25px] ml:w-[140px] lg:ml-[220px] lg:w-[200px]'} title={'Register'} onClick={handleClick}/>
         <p className='text-white'>Or register with</p>
-        <Button className={'xl:ml-[495px]  lg:ml-[245px] italic px-5 bg-blue-400  text-slate-950 border-[0.5px] border-[rgb(65,117,223)]  my-2'} onClick={handleGoogle} title={'Login with Google'}/>
-        <Button className={'xl:ml-[485px] lg:ml-[237px]  bg-blue-600 italic px-5  text-slate-950 border-[0.5px] border-[rgb(59,89,153)] my-2'} title={'Login with Facebook'}/>
+        <Button className={'xl:ml-[485px]   italic px-5 bg-blue-400  text-slate-950 border-[0.5px] border-[rgb(65,117,223)]  my-2 ml:w-[160px] ml:ml-[-35px] lg:ml-[220px] lg:w-[200px]'} onClick={handleGoogle} title={'Login with Google'}/>
+        <Button className={'xl:ml-[485px] bg-blue-600 italic px-5  text-slate-950 border-[0.5px] border-[rgb(59,89,153)] my-2 ml:w-[160px] ml:ml-[-35px] lg:ml-[220px] lg:w-[200px]'} title={'Login with Facebook'}/>
         </div>
        )}
     </div>
