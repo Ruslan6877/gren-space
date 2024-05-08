@@ -39,7 +39,7 @@ function Footer() {
         <FaLinkedinIn />
     ]
   return (
-    <div className='bg-plant_footer container  mx-auto  my-4'>
+    <div className=' container  mx-auto  my-4'>
         <div className=' px-2 bg-bg_footer py-[27px]'>
                 <div className='flex flex-wrap xl:ml-0 sm:ml-20 ml:ml-0 gap-2'>
                 <img src={Logo} alt="" className='mr-[87px]' />

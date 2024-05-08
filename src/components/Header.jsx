@@ -19,7 +19,9 @@ const handleToggle = () => {
 
   return (
     <div className='ml:justify-between ml:w-[1250px] ml:gap-10  py-5 bg-white flex justify-between px-2 pb-[17px] items-center  container  mx-auto border-b-[0.3px] border-b-solid border-b-green_soc'>
+        {/* <Link to={'/'} > */}
         <img src={Logo} alt="logo" className='ml:ml-[-50px] ml:mr-[60px] sm:ml-5  lg:mr-4 sm:mr-4 ml:w-20 xl:w-[150px]'/>
+        {/* </Link> */}
         <ul className=' xl:block sm:hidden md:hidden lg:block ml:hidden flex flex-wrap justify-around items-center gap-4 cursor-pointer  '>
             <NavLink   className='mx-3' to={`/`} >Home</NavLink>
             <NavLink to={`/shop`}  className='mx-3' >Shop</NavLink>

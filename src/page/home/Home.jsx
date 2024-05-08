@@ -54,7 +54,7 @@ function Home({data, handleBtn, allPro, setAllPro}) {
 
 
   return (
-    <div className='bg-plant'>
+    <div className='t'>
     {/* <Header/> */}
     <Welcome/>
     
