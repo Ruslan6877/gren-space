@@ -3,11 +3,13 @@
 import Sale from '/src/assets/Super Sale Banner.svg'
 
 function Categoriyes({setFilterP, data, filterP}) {
+  // const [value, setValue] = useState(10);
 
 
 
   const handleChange = (e) => {
     localStorage.setItem( "val", e.target.value);
+    // setValue(e.target.value);
   }
 
  
@@ -31,9 +33,9 @@ function Categoriyes({setFilterP, data, filterP}) {
 
 
     <form className='mx-3 my-2 mb-12'>
+        {/* <p>{value}</p> */}
         <h2>Price Range</h2>
-        
-        <input type="range" onChange={(e) => handleChange(e)}/>
+        <input type="range" max={1000} min={10}  onChange={(e) => handleChange(e)}/>
     </form>
     
   

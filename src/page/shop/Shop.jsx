@@ -1,12 +1,13 @@
 
 import {  useState } from "react";
-import { Link, useParams } from "react-router-dom"
+import {  useParams } from "react-router-dom"
 import {  FaInstagramSquare, FaLinkedinIn, FaStar, FaTwitter } from "react-icons/fa";
 import { RiFacebookFill } from "react-icons/ri";
 
 // import { FcLike } from "react-icons/fc";
 import { MdFavoriteBorder } from "react-icons/md";
-import { Checkbox } from "@mui/material";
+import { Breadcrumbs, Checkbox, Link, Typography } from '@mui/material';
+
 import Button from "../../components/Button";
 
 function Shop({data, buyCount, setBuyCount}) {
@@ -61,7 +62,13 @@ function PlusNumber(){
   return (
     <div>
       {/* <Header shopping={buyCount} setShopping={setBuyCount}/> */}
-        
+      <Breadcrumbs aria-label="breadcrumb">
+  <Link underline="hover" color="inherit" href="/">
+    Home
+  </Link>
+  
+  <Typography color="green">Shoping</Typography>
+</Breadcrumbs>
       <div className="xl:flex  justify-around container mx-auto">
       <img className="w-[160px] h-[280px] cursor-pointer" src={productShop[0].image} alt="image" />
         <div className="w-[574px]">

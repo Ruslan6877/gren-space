@@ -21,7 +21,7 @@ function Shoping({data, buyCount, setBuyCount}) {
   <Typography color="green">Shoping</Typography>
 </Breadcrumbs>
       <div>
-        <ul className='xl:flex lg:flex xl:block lg:block ml:hidden items-center'>
+        <ul className='xl:flex lg:flex xl:block  ml:hidden items-center'>
           <li className='mx-[120px]'>Product</li>
           <li className='mx-[120px]'>Price</li>
           <li className='mx-[90px]'>Quantity</li>

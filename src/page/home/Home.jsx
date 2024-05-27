@@ -4,12 +4,13 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
  import Welcome from './components/Welcome'
 import Find from './components/Find'
-import Card from '/src/components/Card'
+
 
 import Categoriyes from './components/Categoriyes';
 import Blogs from './components/Blogs'
 import Would from './components/Would'
 import Slider from 'react-slick'
+import Card from '/src/components/Card'
 function Home({data, handleBtn, allPro, setAllPro}) {
 
 
@@ -29,21 +30,22 @@ function Home({data, handleBtn, allPro, setAllPro}) {
           slidesToScroll: 3,
           infinite: true,
           dots: true
-        },
-        breakpoint: 900,
+        }
+      },
+      {
+        breakpoint: 600,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          infinite: true,
-          dots: true
-        },
-        breakpoint: 500,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        },
+          slidesToScroll: 1
+        }
       }
     ]
   };
@@ -59,19 +61,18 @@ function Home({data, handleBtn, allPro, setAllPro}) {
     <Welcome/>
     
     <div className='container  mx-auto  my-2 '>
-    <div className=' xl:flex items-center  '>
+    <div className=' xl:flex items-center '>
     <Categoriyes />
-    <button className='relative right-[320px] top-5 px-4 py-2 bg-green text-white rounded-md' onClick={ handleBtn} >Filter</button>
+    <button className='relative right-[350px] top-5 px-4 py-2 bg-green text-white rounded-md' onClick={ handleBtn} >Filter</button>
 
-    <div className='w-[800px] mr-10 '>
+    <div className='w-[800px] ml:ml-[-300px]  xl:ml-0 lg:ml-0 sm:ml-[-300px]'>
     <Slider {...settings}>
      {allPro && 
      allPro.map((num)=>(
       <Card item={num} key={num}/>
      ))}
-
-  
     </Slider>
+    
     </div>
     {/* <Card data = {data} /> */}
     </div>

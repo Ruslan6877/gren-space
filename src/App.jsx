@@ -42,6 +42,12 @@ function App() {
     }
     fetchData()
   } , [])
+
+
+
+
+
+  
   return (
     <>
     <BrowserRouter>

@@ -11,14 +11,14 @@ import { Link } from "react-router-dom"
 
 
 
-function Card({item, }) {
+function Card({item }) {
    
 
   return (
-    <div className="opacity-95 flex flex-wrap justify-end container  mx-auto  ">
+    <div className=" flex  container  mx-auto  ">
       
-        <div className="flex   ">
-        <div key={item.id} className="w-[258px] px-2 py-1 bg-white mb-7">
+        <div className="flex ">
+        <div key={item.id} className="w-[258px] px-2 py-1 bg-white ">
           <Link to={`/shop/${item.id}`} >
             <img className="w-[148px] ml-9 h-[200px]" src={item.image} alt="fd" />
           </Link>

@@ -4,6 +4,7 @@ import { auth } from '/src/utils/firebase'
 import Button from '../../components/Button';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { GoogleAuthProvider } from "firebase/auth";
+import { Breadcrumbs, Link, Typography } from '@mui/material';
 
 
 function Regiser() {
@@ -33,11 +34,7 @@ function Regiser() {
 
  }
 
-const handleGoogle = async () => {
-const provider = new GoogleAuthProvider(provider);
-console.log('rabotaret');
 
-}
 
 
 
@@ -47,7 +44,13 @@ console.log('rabotaret');
 
   return (
     <div className='  container mx-auto text-center flex-wrap-reverse justify-center items-center bg-white py-14 px-14 border rounded-md'>
-      
+      <Breadcrumbs aria-label="breadcrumb">
+  <Link underline="hover" color="inherit" href="/">
+    Home
+  </Link>
+  
+  <Typography color="green">Registor</Typography>
+</Breadcrumbs>
        {acount ? (
         <div>
           <p className='cursor-pointer text-black'><span className='text-green' >Login</span> |<span  onClick={handleAcount}> Register</span></p>
@@ -59,8 +62,7 @@ console.log('rabotaret');
        <p className='text-white'>Forgot Password?</p>
        <Button className={'xl:ml-[450px]  my-2 xl:px-[129px] ml:ml-[-25px] ml:w-[140px] lg:ml-[225px] lg:w-[200px]'} title={'Login'} onClick={handleClick}/>
         <p className='text-white'>Or login with</p>
-        <Button className={'xl:ml-[485px]  italic px-5  text-slate-950 bg-blue-700 border-[0.5px] border-[rgb(65,117,223)]  my-2 ml:w-[160px] ml:ml-[-35px] lg:ml-[225px] lg:w-[200px]'} onClick={handleGoogle} title={'Login with Google'}/>
-        <Button className={'xl:ml-[485px]  italic px-5 bg-blue-900 text-slate-950 border-[0.5px] border-[rgb(59,89,153)] my-2 ml:w-[160px] ml:ml-[-35px] lg:ml-[225px] lg:w-[200px]'} title={'Login with Facebook'}/>
+        <Button className={'xl:ml-[485px]  italic px-5  text-slate-950 bg-blue-700 border-[0.5px] border-[rgb(65,117,223)]  my-2 ml:w-[160px] ml:ml-[-35px] lg:ml-[225px] lg:w-[200px]'}  title={'Login with Google'}/>
         </div>
        ) : (
         <div>
@@ -77,8 +79,7 @@ console.log('rabotaret');
        <p className='text-white'>Forgot Password?</p>
        <Button className={'xl:ml-[450px]   my-2 xl:px-[129px]  ml:ml-[-25px] ml:w-[140px] lg:ml-[220px] lg:w-[200px]'} title={'Register'} onClick={handleClick}/>
         <p className='text-white'>Or register with</p>
-        <Button className={'xl:ml-[485px]   italic px-5 bg-blue-700  text-slate-950 border-[0.5px] border-[rgb(65,117,223)]  my-2 ml:w-[160px] ml:ml-[-35px] lg:ml-[220px] lg:w-[200px]'} onClick={handleGoogle} title={'Login with Google'}/>
-        <Button className={'xl:ml-[485px] bg-blue-900 italic px-5  text-slate-950 border-[0.5px] border-[rgb(59,89,153)] my-2 ml:w-[160px] ml:ml-[-35px] lg:ml-[220px] lg:w-[200px]'} title={'Login with Facebook'}/>
+        <Button className={'xl:ml-[485px]   italic px-5 bg-blue-700  text-slate-950 border-[0.5px] border-[rgb(65,117,223)]  my-2 ml:w-[160px] ml:ml-[-35px] lg:ml-[220px] lg:w-[200px]'}  title={'Login with Google'}/>
         </div>
        )}
     </div>
